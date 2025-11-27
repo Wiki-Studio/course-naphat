@@ -1,0 +1,46 @@
+.my-course{
+    margin: 0 auto;
+    width: 90%;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* สัดส่วนเท่ากับ 1920x1080 */
+    border: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.flex .pre.none {
+    color: var(--gray-color);
+    cursor: no-drop;
+}
+
+.flex .pre {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.flex .next {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.flex .next:hover {
+    color: var(--primary-dark);
+}
+
+span {
+    color: var(--primary-color);
+}
+
+p a {
+    color: var(--primary-color);
+}

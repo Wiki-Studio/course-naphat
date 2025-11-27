@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แดชบอร์ดผู้ใช้</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dash.css">
+    <meta name="description" content="แดชบอร์ดผู้ใช้สำหรับดูข้อมูลคอร์สเรียน, โปรไฟล์ และรถเข็น">
+    <meta name="author" content="Naphat Course">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a class="logo">Naphat's <span>Course</span></a>
+        <div class="right">
+            <ul>
+                <li><a href="course.html">คอร์สเรียนทั้งหมด</a></li>
+                <li><a href="cart.html">รถเข็น</a></li>
+            </ul>
+            <button id="logout">ออกจากระบบ</button>
+        </div>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="box courses">
+                <h2>คอร์สของฉัน</h2>
+                <div id="courseList"></div>
+            </div>
+            <div class="box user">
+                <p>ข้อมูลผู้ใช้</p>
+                <div id="profile"></div>
+                <div class="more">
+                    <a href="course.html">ดูคอร์สเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="dash.js"></script>
+</body>
+</html>

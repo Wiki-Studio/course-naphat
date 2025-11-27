@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <main>
+    <!-- Part 1 -->
+        <div class="part1 active">
+            <div class="content">
+            <div class="section">
+                <div class="sec-1">
+                <div class="num active">1</div>
+                สมัครบัญชีผู้ใช้งาน
+                </div>
+                <div class="sec-2">
+                <div class="num">2</div>
+                สมัครสำเร็จ
+                </div>
+            </div>
+            </div>
+
+            <form id="signupForm">
+                <label for="email">อีเมล:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="fname">ชื่อ:</label>
+                <input type="text" name="fname" id="fname">
+
+                <label for="lname">นามสกุล:</label>
+                <input type="text" name="lname" id="lname">
+
+                <label for="tel">เบอร์โทรศัพท์:</label>
+                <input type="tel" name="tel" id="tel">
+
+                <div class="row">
+                    <label for="password">รหัสผ่าน:</label>
+                    <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+                </div>
+                <input type="password" name="password" id="password" required>
+
+                <div class="row">
+                    <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+                    <i class="fa-solid fa-eye-slash" id="toggleConfirm"></i>
+                </div>
+                <input type="password" id="confirm_password" required>
+
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">ฉันยอมรับเงื่อนไขและนโยบายข้อมูลส่วนบุคคล</label>
+
+                <button type="submit">สมัครสมาชิก</button>
+                <div id="message"></div>
+            </form>
+        </div>
+
+        <!-- Part 2 -->
+        <div class="part2">
+            <div class="content">
+            <div class="section">
+                <div class="sec-1">
+                <div class="num">1</div>
+                สมัครบัญชีผู้ใช้งาน
+                </div>
+                <div class="sec-2">
+                <div class="num active">2</div>
+                สมัครสำเร็จ
+                </div>
+            </div>
+            </div>
+            <div class="content" style="text-align:center;">
+            <img src="https://naphat.pages.dev/v4/image/true.png" width="100px" alt="">
+            <h3>สมัครสำเร็จแล้ว</h3>
+            <a href="/">กลับหน้าหลัก</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2025 - Naphat's Course
+    </footer>
+    <script src="reg.js"></script>
+</body>
+</html>

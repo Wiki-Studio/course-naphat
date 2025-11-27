@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #f16322;
+    --primary-dark: #d35400;
+    --primary-light: #f8a97a;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --gray-color: #777;
+    --white: #fff;
+    --black: #000;
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --normal-font: "Prompt", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--normal-font);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--white);
+}
+
+main {
+    padding: 20px 50px;
+    height: calc(100vh - 46.4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 4px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 20px;
+}
+
+form {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 50%;
+}
+
+label {
+    user-select: none;
+    cursor: pointer;
+}
+
+input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: var(--gray-color);
+    border: 1px solid var(--gray-color);
+    outline: none;
+    font-family: inherit;
+}
+
+a.forgot {
+    color: #d35400;
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+    background: var(--primary-color);
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: .2s all ease;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+.row:has(.row) {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a[href="register.html"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--white);
+    color: var(--primary-color);
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

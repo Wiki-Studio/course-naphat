@@ -1,0 +1,151 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+
+#cart-list {
+    height: 100%;
+    min-height: calc(100vh - 700px);
+}
+
+.cart-item img {
+    width: 140px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.cart-info {
+    flex: 1;
+}
+
+.cart-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.cart-info p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.cart-price {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #007bff;
+}
+
+.cart-remove {
+    background: #ff5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cart-remove:hover {
+    background: #e04a4a;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cart-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-checkout {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-checkout:hover {
+    background: #218838;
+}
+
+.empty {
+    text-align: center;
+    color: #888;
+    font-size: 1.1rem;
+    padding: 50px 0;
+}
+
+.loading {
+    text-align: center;
+    font-weight: bold;
+    color: #007bff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.course {
+    display: flex;
+    align-items: center;
+}
+
+.course img {
+    width: 100px;
+    height: 100px;
+}
+
+.course > div {
+    margin-left: 10px;
+}
+
+.course > div > h3 {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.course > div > p {
+    color: var(--gray-color);
+    font-size: 12px;
+}
+
+.btn-pay {
+    float: right;
+    width: 100px;
+    padding: 8px 12px;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.btn-pay:hover {
+    border: 2px solid var(--primary-color);
+    color: var(--white);
+    background-color: var(--primary-color);
+}

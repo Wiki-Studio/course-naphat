@@ -1,0 +1,191 @@
+:root {
+    --primary-color: #f16322;
+    --primary-dark: #d35400;
+    --primary-light: #f8a97a;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --gray-color: #777;
+    --white: #fff;
+    --black: #000;
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --normal-font: "Prompt", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--normal-font);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--white);
+    transition: all .2s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 890px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo span {
+    color: var(--dark-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ul li {
+    margin-right: 30px;
+}
+
+header a.active {
+    color: var(--primary-color);
+}
+
+header a {
+    font-weight: 500;
+    transition: var(--transition);
+    border-bottom: 2px solid transparent;
+}
+
+header a:hover {
+    color: #f16322;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+button#logout {
+    outline: none;
+    padding: 12px 16px;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    background: var(--dark-color);
+    color: var(--white);
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+button#logout:hover {
+    background: var(--gray-color);
+    color: var(--white);
+}
+
+main {
+    padding: 20px 50px;
+    height: calc(100vh - 71.68px);
+}
+
+.boxes {
+    display: flex;
+}
+
+.boxes .box {
+    margin: 10px;
+}
+
+.boxes .box.courses {
+    width: 60%;
+    height: calc(100vh - 71.68px - 60px);
+    overflow-y: auto;
+}
+
+.boxes .box.user {
+    width: 40%;
+    padding: 20px;
+    background: var(--light-color);
+    border-radius: 4px;
+    height: 100%;
+}
+
+.boxes .box.user > p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#right {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+button.study-btn {
+    padding: 3px 6px;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    background: var(--white);
+    color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .2s ease;
+}
+
+button.study-btn:hover {
+    border: 2px solid var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.boxes .box.courses h2 {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.course-item {
+    padding: 10px;
+}
+
+.course-item:hover {
+    background: #0000000b;
+}
+
+.course-item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.more {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.more a {
+    color: var(--primary-color);
+}
+
+a[active] {
+    color: #d35400;
+}

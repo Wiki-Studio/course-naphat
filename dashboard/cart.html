@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>รถเข็น | Naphat's Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="cart.css">
+    <meta name="description" content="หน้ารถเข็นแสดงคอร์สที่เลือกซื้อก่อนชำระเงิน">
+    <meta name="author" content="Naphat Course">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Naphat's <span>Course</span></a>
+        <div class="right">
+            <ul>
+                <li><a href="course.html">คอร์สเรียนทั้งหมด</a></li>
+                <li><a active href="cart.html">รถเข็น</a></li>
+            </ul>
+            <button id="logout">ออกจากระบบ</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="boxes">
+            <div class="box courses">
+                <h2>🛒 รถเข็นของคุณ</h2>
+                <div id="cart-content"></div>
+            </div>
+            <div class="box user">
+                <p>ข้อมูลผู้ใช้</p>
+                <div id="profile"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+    <script src="dash.js"></script>
+</body>
+</html>

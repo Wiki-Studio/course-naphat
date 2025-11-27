@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #f16322;
+    --primary-dark: #d35400;
+    --primary-light: #f8a97a;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --gray-color: #777;
+    --white: #fff;
+    --black: #000;
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --normal-font: "Prompt", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--normal-font);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--white);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px 0 0 0;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.sec-1,
+.sec-2,
+.sec-3 {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.num.active:hover,
+.num {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    color: var(--primary-color);
+    border: 2px solid;
+    border-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.num.active,
+.num:hover {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px 50px;
+}
+
+form {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 50%;
+}
+
+label {
+    user-select: none;
+    cursor: pointer;
+}
+
+input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: var(--gray-color);
+    border: 1px solid var(--gray-color);
+    outline: none;
+    font-family: inherit;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+    background: var(--primary-color);
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: .2s all ease;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+a[login] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--white);
+    color: var(--primary-color);
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row i {
+    font-size: 12px;
+}
+
+.part2 .content:last-child {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 50%;
+    align-items: center;
+}
+
+.part2 .content:last-child h3 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.part2 .content:last-child a {
+    font-size: 16px;
+    color: var(--primary-color);
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.part2 .content:last-child a:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--primary-color);
+}
+
+.part1, 
+.part2 {
+    display: none;
+}
+
+.part1.active ,
+.part2.active {
+    display: block;
+}
